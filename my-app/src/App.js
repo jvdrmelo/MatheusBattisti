@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Frase from './components/Frase';
 
 function App() {
 
@@ -10,6 +11,8 @@ function App() {
       <h1>Olá React!</h1>
       <p>Meu primeiro App</p>
       <img src={url} alt=""/>
+      <HelloWorld/>
+      <Frase/>
     </div>
   );
 }
