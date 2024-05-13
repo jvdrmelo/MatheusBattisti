@@ -1,18 +1,24 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
-import Frase from './components/Frase';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
 
-  const url = "https://via.placeholder.com/200"
+  const nome = "Maria"
 
   return (
     <div className="App">
-      <h1>Olá React!</h1>
-      <p>Meu primeiro App</p>
-      <img src={url} alt=""/>
       <HelloWorld/>
-      <Frase/>
+      <SayMyName nome="Matheus"/>
+      <SayMyName nome="João"/>
+      <SayMyName nome={nome}/>
+      <Pessoa 
+        nome="Rodrigo" 
+        idade="28" 
+        profissao="Programador" 
+        foto="https://via.placeholder.com/150" 
+      />
     </div>
   );
 }
