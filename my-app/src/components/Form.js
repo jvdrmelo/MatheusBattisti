@@ -4,7 +4,7 @@ function Form() {
 
     function cadastrarUsuario(e) {
         e.preventDefault()
-        console.log(`Usuário ${name} foi cadastrado com a senha: ${password}`)
+        console.log(`Usuário: '${name}' foi cadastrado com a senha: '${password}'`)
     }
     
 const [name, setName] = useState('Matheus')
@@ -25,7 +25,7 @@ const [password, setPassword] = useState('Matheus')
                     onChange={(e) => setName(e.target.value)} />
                 </div>
                 <div>
-                    <label>Senha:</label>
+                    <label htmlFor="password">Senha:</label>
                     <input 
                     type="password" 
                     id="password" 
