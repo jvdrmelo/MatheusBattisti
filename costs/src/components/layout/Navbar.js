@@ -17,16 +17,16 @@ function Navbar() {
                         <Link to="/">Home</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/company">Company</Link>
+                        <Link to="/Projects">Projetos</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/company">Empresa</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/newproject">NewProject</Link>
+                        <Link to="/contact">Contato</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/Projects">Projects</Link>
+                        <Link to="/newproject">Novo Projeto</Link>
                     </li>
                 </ul>  
             </Container>
